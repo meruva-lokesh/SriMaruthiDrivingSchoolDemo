@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sri Maruthi Driving School</title>
+    <script type="text/javascript">
+      // SPA Fix for GitHub Pages
+      // This file handles 404s for single-page applications
+      // https://github.com/rafgraph/spa-github-pages
+      
+      var segmentCount = 0;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/')
+          .replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+    <!-- This page is served when a 404 error occurs on GitHub Pages -->
+    <!-- The script above redirects the user back to index.html -->
+    <!-- No content needed here as the redirect happens automatically -->
+  </body>
+</html>
